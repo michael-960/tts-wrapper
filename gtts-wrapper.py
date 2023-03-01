@@ -8,7 +8,7 @@ import pathlib
 import json
 
 
-p = pathlib.Path(__file__).resolve()
+p = pathlib.Path(__file__).parent.resolve()
 
 with open(p / 'config.json', 'r') as f:
     config = json.load(f)
